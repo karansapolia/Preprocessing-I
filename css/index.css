@@ -202,6 +202,9 @@ body article section {
   display: flex;
   flex-flow: column nowrap;
 }
+body article section p {
+  padding: 1%;
+}
 body article div {
   display: flex;
   justify-content: space-around;
