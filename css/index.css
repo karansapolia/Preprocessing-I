@@ -228,7 +228,7 @@ body i {
 body .selected {
   background-color: rgba(76, 0, 0, 0.6);
 }
-header {
+body header {
   min-height: 20vh;
   font-size: 2.5rem;
   width: 100%;
@@ -236,10 +236,10 @@ header {
   flex-flow: column nowrap;
   justify-content: space-evenly;
 }
-header h1 {
+body header h1 {
   font-size: 3rem;
 }
-header nav {
+body header nav {
   font-size: 2rem;
   display: flex;
   flex-flow: row nowrap;
@@ -249,7 +249,7 @@ header nav {
   width: 100%;
   min-height: 2vh;
 }
-header nav a {
+body header nav a {
   background: rgba(76, 0, 0, 0.1);
   padding: 0 1%;
   border-radius: 5px;
@@ -257,7 +257,7 @@ header nav a {
   text-align: center;
   color: whitesmoke;
 }
-header .header-section-2 {
+body header .header-section-2 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -266,25 +266,25 @@ header .header-section-2 {
   text-align: center;
 }
 @media (max-width: 500px) {
-  header .header-section-2 {
+  body header .header-section-2 {
     flex-flow: column nowrap;
     justify-content: space-evenly;
   }
 }
-header .header-section-2 img {
+body header .header-section-2 img {
   border-radius: 50%;
   border: 3px solid white;
   width: 50%;
   max-width: 600px;
 }
-header .header-section-2 * {
+body header .header-section-2 * {
   margin: 2%;
 }
-header .header-section-3 {
+body header .header-section-3 {
   display: flex;
   justify-content: center;
 }
-header .header-section-3 a {
+body header .header-section-3 a {
   background-color: whitesmoke;
   color: black;
   font-size: 80%;
@@ -293,31 +293,31 @@ header .header-section-3 a {
   padding: 1% 2%;
   text-decoration: none;
 }
-header form {
+body header form {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
 }
-header form input {
+body header form input {
   flex-grow: 5;
   width: 70%;
 }
-footer {
+body footer {
   height: 20vh;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
-footer p {
+body footer p {
   display: inline-block;
   margin: 0 auto;
   padding: 2%;
   justify-content: center;
   align-items: center;
 }
-footer .copyright {
+body footer .copyright {
   font-size: 1.3rem;
   color: gainsboro;
 }
