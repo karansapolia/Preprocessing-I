@@ -121,10 +121,15 @@ body {
 		background-color: whitesmoke;
 		padding: 1%;
 		border-radius: 10px;
+		width: 70%;
 		max-width: 1200px;
 		
+		@media (max-width: 800px) {
+			width: 85%;
+		}
+
 		@media(max-width: 500px) {
-			margin: 3% 1%;
+			width: 95%;
 		}
 
 		section {
@@ -133,6 +138,48 @@ body {
 
 			p {
 				padding: 1%;
+			}
+
+			form {
+				margin: 0 auto;
+				max-width: 800px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr 4fr;
+
+				div {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				label {
+					padding: 0 5%;
+				}
+
+				input {
+					height: 30px;
+					max-height: 50px;
+				}
+
+				input:focus, textarea:focus, input[type="submit"]:focus {
+					border: 1px solid red;
+				}
+
+				input, textarea {
+					max-width: 400px;
+					color: gray;
+					border: 1px solid white;
+					border-radius: 5px;
+					padding: 3%;
+				}
+
+				input[type="submit"] {
+					max-width: 100px;
+					max-height: 30px;
+					height: 30px;
+				}
+
 			}
 		}
 
@@ -228,18 +275,6 @@ body {
 				border-radius: 5px;
 				padding: 1% 2%;
 				text-decoration: none;
-			}
-		}
-	
-		form {
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: center;
-			justify-content: center;
-	
-			input{
-				flex-grow: 5;
-				width: 70%;
 			}
 		}
 	}

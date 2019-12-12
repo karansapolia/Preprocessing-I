@@ -191,11 +191,17 @@ body article {
   background-color: whitesmoke;
   padding: 1%;
   border-radius: 10px;
+  width: 70%;
   max-width: 1200px;
+}
+@media (max-width: 800px) {
+  body article {
+    width: 85%;
+  }
 }
 @media (max-width: 500px) {
   body article {
-    margin: 3% 1%;
+    width: 95%;
   }
 }
 body article section {
@@ -204,6 +210,43 @@ body article section {
 }
 body article section p {
   padding: 1%;
+}
+body article section form {
+  margin: 0 auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 4fr;
+}
+body article section form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body article section form label {
+  padding: 0 5%;
+}
+body article section form input {
+  height: 30px;
+  max-height: 50px;
+}
+body article section form input:focus,
+body article section form textarea:focus,
+body article section form input[type="submit"]:focus {
+  border: 1px solid red;
+}
+body article section form input,
+body article section form textarea {
+  max-width: 400px;
+  color: gray;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3%;
+}
+body article section form input[type="submit"] {
+  max-width: 100px;
+  max-height: 30px;
+  height: 30px;
 }
 body article div {
   display: flex;
@@ -292,16 +335,6 @@ body header .header-section-3 a {
   border-radius: 5px;
   padding: 1% 2%;
   text-decoration: none;
-}
-body header form {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
-body header form input {
-  flex-grow: 5;
-  width: 70%;
 }
 body footer {
   height: 20vh;
