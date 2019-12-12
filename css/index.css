@@ -248,6 +248,15 @@ body article section form input[type="submit"] {
   max-height: 30px;
   height: 30px;
 }
+body article section.work-history-section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+body article section.work-history-section div h2 {
+  padding: 1%;
+  align-self: center;
+}
 body article div {
   display: flex;
   justify-content: space-around;
